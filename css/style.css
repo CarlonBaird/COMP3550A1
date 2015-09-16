@@ -1,0 +1,302 @@
+/*Body*/
+body
+{
+	background-image: url('../images/pgBackground.jpg');
+	background-repeat:no-repeat;
+	background-size:1500px auto;
+}
+
+
+/*Navigation and drop downs*/
+ul 
+{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li 
+{
+	display: block;
+	position: relative;
+	float: left;
+}
+
+
+li ul 
+{
+	display: none;
+}
+
+ul li a 
+{
+	display: block;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+    white-space: nowrap;
+    color: black;
+}
+
+ul li ul a:hover
+{
+	background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+	color:black;
+}
+
+li:hover ul 
+{
+	display: block;
+	position: absolute;
+	background-color: turquoise;
+	color:black;
+}
+
+li:hover li 
+{
+	float: none;
+}
+
+li:hover a
+{
+	/*background: #008B8B;*/
+	border-radius: 3px;
+	height:50px;
+	opacity: 0.5;
+	text-decoration: none;
+	font-weight: bold;
+	color:black;
+}
+
+/*
+.active
+{
+	background-color: red !important;
+}*/
+
+/*Footer*/
+footer
+{
+	background-color: white;
+	border-radius:4px;
+	height:130px;
+	width:1120px;
+	margin: 20px auto;
+	padding: 17px 30px 13px;
+	background-color:#white;
+	-webkit-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:6px;
+}
+
+footer p
+{
+	font-size: 14px;
+    font-family:verdana,sans-serif;
+    font-weight:bold;
+	text-align: center;
+}
+
+footer img
+{
+    width:90px;
+    height:90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Contact div*/
+.mytabset
+{
+	background-color: white;
+	height:300px;
+	border-radius: 3px;
+}
+
+th 
+{
+    background: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+	background: -webkit-gradient(linear, left top, left bottom, 
+				color-stop(0%,#6db3f2), 
+				color-stop(50%,#54a3ee), 
+				color-stop(51%,#3690f0),
+				color-stop(100%,#1e69de));
+    color: white;
+} 
+
+/*Registration Form*/
+
+#instruct p
+{
+    font-family:sans-serif;
+    font-size:18px;
+    padding-bottom:20px;
+    text-shadow:  0px 1px 2px grey;    
+}
+
+#newuser
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:177px;
+    height:260px;
+    padding-top:20px;
+}
+
+#register
+{
+	height:1000px;
+	width: 620px;
+}
+
+#register form
+{
+	width:620px;
+	float:left;
+	background: #fff;
+	color: #777;
+	-webkit-box-shadow: 0px 2px 8px 2px #32CD32;
+	-moz-box-shadow: 0px 2px 8px 2px #32CD32;
+	box-shadow: 0px 2px 8px 2px #32CD32; 
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px; 
+	overflow: hidden;
+}
+
+#register .formtitle
+{
+	padding: 15px;
+	line-height: 19px;
+	font-size: 23px;
+    text-align: center;
+    font-family:sans-serif;
+	text-shadow: -1px -1px #696969;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	width: 620px;
+    height:50px;
+	background: url("../images/pattern.jpg");
+    border-bottom: 5px solid #000;
+}
+
+#register form input,textarea
+{
+	padding:10px;
+    display:inline-block;
+	border: 1px solid #A9A9A9;
+    width:250px;
+    font-size:15px;
+	color:#778899;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    border-radius:6px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+
+#register .radio
+{
+    padding:10px;
+    width:50px;
+}
+
+#register input:hover, textarea:hover,
+#register input:focus, textarea:focus 
+{
+	border-color:#33AD5C;
+	box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;
+	-moz-box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;
+	-webkit-box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;	
+}
+
+#register form label 
+{
+	margin-left: 24px;
+    margin-right:24px;
+    width:100px;
+    font-family:sans-serif;
+    font-weight: bold;
+	color: #000;
+    display:inline-block;
+    
+}
+
+#register form input[type=radio]
+{
+    width:20px;
+    padding:0px;
+    margin:0px;
+    
+}
+
+#register form input[type=text],
+#register form input[type=password],
+#register form input[type=date],
+#register form textarea
+{
+    background: #000;
+    font-size: 15px;
+    font-family: sans-serif;
+    color:white;
+}
+
+
+#register form #comments
+{
+    width : 300px;
+    height: 100px;
+    font-family: sans-serif;
+}
+
+#register form 
+.buttons
+{
+	background: url("../images/pattern.jpg");
+	border-top: 5px solid #000;
+	padding: 15px;
+	height: 70px;
+
+}
+
+#register .button 
+{
+
+	background: -moz-linear-gradient(top, #19A347 0%, #33AD5C 100%); 
+	background: -webkit-linear-gradient(top, #19A347 0%,#33AD5C 100%);
+	background: -ms-linear-gradient(top, #19A347 0%,#33AD5C 100%);
+	background: linear-gradient(45deg, #19A347 0%,#33AD5C 100%);
+	border: 1px solid #33AD5C;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px; 
+	line-height: 20px;
+	font-size: 16px;
+	padding: 6px 12px;
+	color: #fff;
+    width:100px;
+	margin-left: 150px;
+	cursor: pointer;
+}
+
+#register .button:hover
+{
+	background: -moz-linear-gradient(top, #007A29 0%, #66C285 100%); 
+	background: -webkit-linear-gradient(top,#007A29  0%,#66C285 100%);
+	background: -ms-linear-gradient(top, #007A29 0%,#66C285 100%); 
+	background: linear-gradient(45deg, #007A29 0%,#66C285 100%);
+}
+
