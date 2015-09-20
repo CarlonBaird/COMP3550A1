@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http:-equv="X-UA-compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<meta name="viewport" content="width=device-width">
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>Quiz</title>
@@ -11,6 +11,8 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script type="js/respond.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/quiz.js"></script>
 	</head>
 	
 	<body>
@@ -18,8 +20,7 @@
 			<header class="row">
 				<a href="#"> <img src="images/climaologo.png" alt="" class="src"></a>
 			</header>
-
-			<nav class="navbar navbar-default row">
+<nav class="navbar navbar-default row">
 			    <ul class="nav navbar-nav">
 			        <li><a href="index.html">Home</a></li>
 				    <li><a href="climatechange.html">Climate Change</a></li>
@@ -34,6 +35,194 @@
 			        <li class="active"><a href="quiz.html">Quiz</a></li>
 			    </ul>
 			</nav>
+
+
+			<div>
+				<form name="ClimaQuiz" class="form-horizontal" >
+
+					<fieldset>
+						<legend> Are you Clima-Smart? Let's see!<br> </legend>
+
+						<div id='timer'>
+							<script type="text/javascript"> window.onload= CreateTimer("timer", 120);</script>
+						</div> <br>
+
+						<ol>
+							<li>
+								<h4> The melting of Polar Ice Caps causes rise in sea level. </h4>
+
+									<div>
+										<input type="radio" name="q1" id="q1A" value="A" /> A) True
+									</div>
+
+									<div>
+										<input type="radio" name="q1" id="q1B" value="B" /> B) False
+									</div>
+							</li> <br>
+							<li>
+								<h4> Glaciers can be restored after they have melted away.</h4>
+
+								<div>
+									<input type="radio" name="q2" id="q2A" value="A" /> A) True
+								</div>
+
+								<div>
+									<input type="radio" name="q2" id="q2B" value="B" /> B) False
+								</div>
+							</li> <br>
+
+							<li>
+								<h4> Which of the following can be done to reduce the rate of climate change?  </h4>
+
+								<div>
+									<input type="radio" name="q3" id="q3A" value="A" /> A) Turning off lights
+								</div>
+
+								<div>
+									<input type="radio" name="q3" id="q3B" value="B" /> B) Carpooling
+								</div>
+								<div>
+									<input type="radio" name="q3" id="q3C" value="C" /> C) Eating lower on the food chain
+								</div>
+								<div>
+									<input type="radio" name="q3" id="q3D" value="D" /> D) All of the above
+								</div>
+							</li> <br>
+							<li>
+								<h4>Climate change results in a higher proportion of precipitation received as snow, rather than rain. </h4>
+
+								<div>
+									<input type="radio" name="q4" id="q4A" value="A" /> A) True
+								</div>
+
+								<div>
+									<input type="radio" name="q4" id="q4B" value="B" /> B) False
+								</div>
+							</li> <br>
+							<li>
+								<h4> Rising sea levels could reduce: </h4>
+
+								<div>
+									<input type="radio" name="q5" id="q5A" value="A" /> A) Water quality
+								</div>
+
+								<div>
+									<input type="radio" name="q5" id="q5B" value="B" /> B) Water availability in coastal areas
+								</div>
+
+								<div>
+									<input type="radio" name="q5" id="q5C" value="C" /> C) Surface runoff
+								</div>
+								<div>
+									<input type="radio" name="q5" id="q5D" value="D" /> D) A and B
+								</div>
+								<div>
+									<input type="radio" name="q5" id="q5E" value="E" /> E) A and C
+								</div>
+
+
+							</li> <br>
+							<li>
+								<h4> The six hottest years on record occurred during:</h4>
+
+								<div>
+									<input type="radio" name="q6" id="q6A" value="A" /> A) The last decade.
+								</div>
+
+								<div>
+									<input type="radio" name="q6" id="q6B" value="B" /> B) The last century.
+								</div>
+								<div>
+									<input type="radio" name="q6" id="q6C" value="C" /> C) The 1800s.
+								</div>
+							</li> <br>
+							<li>
+								<h4> Which century was the wettest of the last millennium? </h4>
+
+								<div>
+									<input type="radio" name="q7" id="q7A" value="A" />  A) 19th
+								</div>
+
+								<div>
+									<input type="radio" name="q7" id="q7B" value="B" /> B) 18th
+								</div>
+
+								<div>
+									<input type="radio" name="q7" id="q7C" value="C" /> C) 20th
+								</div>
+
+								<div>
+									<input type="radio" name="q7" id="q7D" value="D" /> D) 14th
+								</div>
+							</li> <br>
+							<li>
+							<h4> Which country is dangerously low on water? </h4>
+
+							<div>
+								<input type="radio" name="q8" id="q8A" value="A" /> A) Australia
+							</div>
+
+							<div>
+								<input type="radio" name="q8" id="q8B" value="B" /> B) China
+							</div>
+
+							<div>
+								<input type="radio" name="q8" id="q8C" value="C" /> C) South Africa
+							</div>
+
+							<div>
+								<input type="radio" name="q8" id="q8D" value="D" /> D) India
+							</div>
+
+
+							</li> <br>
+							<li>
+								<h4> Which greenhouse gas is most effective in trapping heat near the Earth's surface? </h4>
+
+								<div>
+									<input type="radio" name="q9" id="q9A" value="A" /> A) Nitrogen
+								</div>
+
+								<div>
+									<input type="radio" name="q9" id="q9B" value="B" /> B) Carbon Dioxide
+								</div>
+
+								<div>
+									<input type="radio" name="q9" id="q9C" value="C" /> C) Methane
+								</div>
+
+								<div>
+									<input type="radio" name="q9" id="q9D" value="D" /> D) Water Vapor
+								</div>
+							</li> <br>
+							<li>
+								<h4> There are places on Earth which are colder than they were 100 years ago. </h4>
+
+								<div>
+									<input type="radio" name="q10" id="q10A" value="A" /> A) True
+								</div>
+
+								<div>
+									<input type="radio" name="q10" id="q10B" value="B" /> B) False
+								</div>
+							</li> <br>
+
+		`				</ol>
+
+						<div>
+							<input type="submit" value="Submit" onclick="checkAnswers()" />
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+
+
+
+
+
+
+
 
 			<footer>
 				<div>
