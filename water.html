@@ -2,7 +2,6 @@
 <html lang="en-GB">
 	<head>
 		<meta charset="UTF-8">
-		<meta http:-equv="X-UA-compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale-1">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -10,26 +9,109 @@
 		<link href="images/logo.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/clima_info.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="js/respond.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<style>
+			#image_cont{
+				box-shadow: 10px 10px 50px #46694d;
+			}
+			#image_cont{
+				position: relative;
+				display:inline-block;
+				text-align: center;
+			}
+
+			#btn_con_light{
+				position:absolute;
+				top: 70%;
+				left: 15%;
+			}
+
+			#btn_con_sun{
+				position:absolute;
+				top: 75%;
+				left: 35%
+			}
+
+			#btn_con_water{
+				position:absolute;
+				top: 68%;
+				left: 55%
+			}
+
+			#btn_con_green{
+				position:absolute;
+				top: 55%;
+				left: 75%
+			}
+			#img_icon1{
+				width: 125px;
+				height: 125px;
+				-webkit-filter: drop-shadow(10px 11px 0 #e55f0a)
+				drop-shadow(-10px -11px 0 #f8b34e);
+				filter: drop-shadow(1px 1px 0 #e55f0a)
+				drop-shadow(-1px -1px 0 #f8b34e);
+			}
+			#img_icon1:hover {
+				width: 200px;
+				height: 200px;
+			}
+			#myModal1{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+
+			#myModal2{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+
+			#myModal3{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+			#myModal4{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+			#main_header{
+				font-family: fantasy;
+				font-size: 100px;
+				color: #32CD32;
+				background: -webkit-linear-gradient(#f87a56, #f8b34e);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		</style>
 	</head>
 	
 	<body>
 		<div class="container">
 			<header class="row">
-				<a href="index.html"> <img src="images/climaologo.png" alt="" class="src"></a>
+				<a href="index.html"> <img src="images/climaologo.png" alt="clima organisation's logo" class="clogo"></a>
 			</header>
 
 
 			<nav class="navbar navbar-default row">
 			    <ul class="nav navbar-nav">
 			        <li><a href="index.html">Home</a></li>
-				    <li><a href="climatechange.html">Climate Change</a></li>
+				    <li>
+				    	<a href="climatechange.html">Climate Change</a>
+				    	<ul>
+			    			<li><a href="ccevidence.html">Evidence</a></li>
+				    		<li><a href="cccauses.html">Causes</a></li>
+				    		<li><a href="infographic.html">Infographic</a></li>
+			    		</ul>
+				    </li>
+				    
 				    <li>
 			    		<a class="active" href="#">Impacts</a>
 			    		<ul>
-			    			<a href="water.html">Water Resources</a>
+			    			<li><a href="water.html">Water Resources</a></li>
 			    		</ul>
 			    	</li>
 			        <li><a href="contact.html">Contact</a></li>
@@ -39,7 +121,7 @@
 			</nav>
 
 			<div class="container" id="image_cont" style="background-color: rgba(190, 245, 213, 0.85)">
-				<h1 id="main_header">CLIMA INFO: Know your facts</h1>
+				<h1 id="main_header">Be in the know!</h1>
 				<img class="img-responsive center-block" src="images/water_impact.png">
 				<div class="container">
 					<button type="button" class="btn btn-lg" id="btn_con_light" style="background-color: transparent" data-toggle="modal" data-target="#myModal1">
@@ -142,12 +224,13 @@
 					</div>
 				</div>
 			</div>
-            <footer>
-                <div>
-                    <a href="index.html"><img src="images/logo.png" alt="Clima Organisation logo"/></a>
-                </div>
-                <p>Clima Organisation &copy; 2015 . All Rights Reserved.</p>
-            </footer>
+
+			<footer>
+				<div>
+					<a href="index.html"><img src="images/logo.png" alt="Clima Organisation logo"/></a>
+				</div>
+				<p>Clima Organisation &copy; 2015 . All Rights Reserved.</p>
+			</footer>
 		</div>
 
 		<script src="js/jquery.min.js"></script>

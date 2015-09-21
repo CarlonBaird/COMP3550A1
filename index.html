@@ -2,31 +2,131 @@
 <html lang="en-GB">
 	<head>
 		<meta charset="UTF-8">
-		<meta http:-equv="X-UA-compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale-1">
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>Home</title>
 		<link href="images/logo.ico" rel="icon" type="image/x-icon" />
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- bullet styling on slideshow
+			.jssorb05 div           (normal)
+			.jssorb05 div:hover     (normal mouseover)
+			.jssorb05 .av           (active)
+			.jssorb05 .av:hover     (active mouseover)
+			.jssorb05 .dn           (mousedown)			
+		-->
+		<style>
+			.jssorb05
+			{
+			    position: absolute;
+			}
+
+			.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av
+			{
+			    position: absolute;
+			    /* size of bullet elment */
+			    width: 20px;
+			    height: 20px;
+			    background: url(images/b05.png) no-repeat;
+			    overflow: hidden;
+			    cursor: pointer;
+			}
+			.jssorb05 div 
+			{
+			 	background-position: -7px -7px;
+			}
+
+			.jssorb05 div:hover, .jssorb05 .av:hover
+			{
+				background-position: -37px -7px; 
+			}
+
+			.jssorb05 .av 
+			{
+				background-position: -67px -7px;
+			}
+
+			.jssorb05 .dn, .jssorb05 .dn:hover
+			{
+				background-position: -97px -7px;
+			}
+		</style>
+
+		<!--arrow styling on slideshow
+			.jssora11l                  (normal)
+			.jssora11r                  (normal)
+			.jssora11l:hover            (normal mouseover)
+			.jssora11r:hover            (normal mouseover)
+			.jssora11l.jssora11ldn      (mousedown)
+			.jssora11r.jssora11rdn      (mousedown)
+		-->
+		<style>
+			.jssora11l, .jssora11r
+			{
+			   display: block;
+			    position: absolute;
+			    /* size of arrow element */
+			    width: 40px;
+			    height: 40px;
+			    cursor: pointer;
+			    background: url(images/a11.png) no-repeat;
+			    overflow: hidden;
+			}
+
+			.jssora11l
+			{ 
+				background-position: -11px -41px;
+			}
+
+			.jssora11r
+			{
+			 	background-position: -71px -41px;
+			}
+
+			.jssora11l:hover 
+			{
+				background-position: -131px -41px;
+			}
+
+			.jssora11r:hover
+			{ 
+				background-position: -191px -41px;
+			}
+
+			.jssora11l.jssora11ldn
+			{
+			 	background-position: -251px -41px;
+			}
+
+			.jssora11r.jssora11rdn
+			{
+			 	background-position: -311px -41px;
+			}
+		</style>
 		<script type="js/respond.js"></script>
 	</head>
 
 	<body>
 		<div class="container">
 			<header class="row">
-				<a href="index.html"> <img src="images/climaologo.png" alt="" class="src"></a>
+				<a href="index.html"> <img src="images/climaologo.png" alt="clima organisation's logo" class="clogo"></a>
 			</header>
 
-			<nav class="navbar navbar-default row">
+			<nav class="row navbar navbar-default">
 				<ul class="nav navbar-nav">
-			    	<li class="active"><a href="index.html">Home</a></li>
-			    	<li><a href="climatechange.html">Climate Change</a></li>
+			    	<li class="active "><a href="index.html">Home</a></li>
+			    	<li>
+			    		<a href="climatechange.html">Climate Change</a>
+			    		<ul>
+			    			<li><a href="ccevidence.html">Evidence</a></li>
+				    		<li><a href="cccauses.html">Causes</a></li>
+			    		</ul>
+			    	</li>
 			    	<li>
 			    		<a href="#">Impacts</a>
 			    		<ul>
-			    			<a href="water.html">Water Resources</a>
+			    			<li><a href="water.html">Water Resources</a></li>
 			    		</ul>
 			    	</li>
 			    	<li><a href="contact.html">Contact</a></li>
@@ -35,40 +135,101 @@
 			    </ul>
 			</nav>
 
-			<div class="jumbotron" row>
-				<h1>Home</h1>
-				<p>Text describing home</p> 
-			</div>
+			<!-- Jssor Slider Begin -->
+	        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+	        <!-- ================================================== -->
+			
+			<div id="slider1_container" style="display: none; position: relative; margin: 0 auto; width: 1140px; height: 442px; overflow: hidden;">
 
-			<div class="row">
-				<div class="col-sm-6">
-					<h3>About *Name of Organisation*</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odit blanditiis, quia soluta quod quasi deleniti, nihil nobis, nulla nostrum cum fuga quam deserunt aliquid obcaecati. Nulla dolor voluptas soluta?</p>
-					<p><a href="#">Read more >></a></p>
+	            <!-- Loading Screen -->
+	            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+	                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+	                background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
+	                </div>
+	            </div>
+
+	            <!-- Slides Container -->
+	            <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;
+	            overflow: hidden;">
+	            	<div>
+	            		<img data-u="image" src="images/Message.jpg" alt="Message"/>
+	            	</div>
+
+	                <div>
+	                    <img data-u="image" src="images/climatechange.jpg" alt="Climate Change"/>
+	                </div>
+
+	                <div>
+	                    <img data-u="image" src="images/garden.jpg" alt="Garden"/>
+	                </div>
+	                
+	                <div>
+	                    <img data-u="image" src="images/fantastic.jpg" alt="Violet Flowers"/>
+	                </div>
+	                
+	                <div>
+	                    <img data-u="image" src="images/polarbears.jpg" alt="Polar Bears"/>
+	                </div>
+
+	                <div>
+	                	<img data-u="image" src="images/canarybird.jpg" alt="Canary Bird"/>
+	                </div>
+	                
+	                <div>
+	                    <img data-u="image" src="images/waterdroplet.jpg" alt="Water Droplet"/>
+	                </div>
+	            </div>
+
+	            <!-- bullet navigator container -->
+	            <div data-u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
+	                <!-- bullet navigator item prototype -->
+	                <div data-u="prototype"></div>
+	            </div>
+
+	            <!-- Arrow Left -->
+	            <span data-u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+	            </span>
+	            <!-- Arrow Right -->
+	            <span data-u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+	            </span>
+	        </div>
+	        <!-- Jssor Slider End -->
+
+	        <div class="row intro">
+				<div class="col-sm-12 col-md-6 info">
+					<h3>About our organisation</h3>
+					<hr />
+					<p>We are a group of environmentalist charged with duty of educating
+					   the public about climate change and its impacts.
+					</p>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-sm-12 col-md-6 info">
 					<h3>Our mission</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odit blanditiis, quia soluta quod quasi deleniti, nihil nobis, nulla nostrum cum fuga quam deserunt aliquid obcaecati. Nulla dolor voluptas soluta?</p>
-					<p><a href="#">Read more >></a></p>
+					<hr />
+					<p>
+						To alleviate the issue of climate change around the world through education.
+					</p>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-sm-6">
+			<div class="row intro">
+				<div class="col-sm-12 col-md-6 info">
 					<h3>Our vision</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odit blanditiis, quia soluta quod quasi deleniti, nihil nobis, nulla nostrum cum fuga quam deserunt aliquid obcaecati. Nulla dolor voluptas soluta?</p>
-					<p><a href="#">Read more >></a></p>
+					<hr />
+					<p>That planet Earth continues to be habitable for future generations.</p>
+		
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-sm-12 col-md-6 info">
 					<h3>Works we have done so far</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odit blanditiis, quia soluta quod quasi deleniti, nihil nobis, nulla nostrum cum fuga quam deserunt aliquid obcaecati. Nulla dolor voluptas soluta?</p>
-					<p><a href="#">Read more >></a></p>
+					<hr />
+					<p></p>
+					<p><a href="water.html">Impact of climate change on water resources</a></p>
 				</div>
 			</div>
 
-			<footer>
+			<footer class="container-fluid">
 				<div>
 					<a href="index.html"><img src="images/logo.png" alt="Clima Organisation logo"/></a>
 				</div>
@@ -76,7 +237,20 @@
 			</footer>
 		</div>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+		<!--<script src="js/jquery.min.js"></script>-->
+	    <script src="js/jquery-1.9.1.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+	    <!-- jssor slider scripts-->
+	    <!-- use jssor.js + jssor.slider.js instead for development -->
+	    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+	    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+	    <script type="text/javascript" src="js/slidemotion.js"></script>
 	</body>
 </html>

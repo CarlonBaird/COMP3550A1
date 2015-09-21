@@ -1,19 +1,17 @@
+/* Author : Carlon R. Baird*/
+/* Customised Stylings*/
+
 /*Body*/
 body
 {
-	background-image: url('../images/pgBackground.jpg');
-	background-repeat:no-repeat;
-	background-size:100%;
+  	background: url('../images/pgBackground.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
-form
-{
-	background-color: white;
-	background-image: url("../images/quizbg.jpg");
-	background-repeat:no-repeat;
-	background-size:1200px auto;
 
-}
 /*Navigation and drop downs*/
 ul 
 {
@@ -27,12 +25,20 @@ ul li
 	display: block;
 	position: relative;
 	float: left;
+	color:black !important;
 }
 
 
 li ul 
 {
 	display: none;
+	width:200px !important;
+	height: 100px !important;
+	background:white;
+	border-bottom-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+	border-width: thin;
+	border-style: solid;
 }
 
 ul li a 
@@ -41,23 +47,26 @@ ul li a
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
     white-space: nowrap;
-    color: black;
+    color: black !important;
 }
 
-ul li ul a:hover
+ul li a:hover
 {
-	background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
-	color:black;
+  	background: -webkit-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%) !important; 
+  	background:    -moz-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%) !important; 
+  	background:     -ms-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%) !important;
+  	background:      -o-linear-gradient(90deg, #00c6ff 10%, #0072ff 90%) !important; 
+  	background:         linear-gradient(90deg, #00c6ff 10%, #0072ff 90%) !important;
+	color:white !important;
+	border-radius: 3px;
 }
 
 li:hover ul 
 {
 	display: block;
 	position: absolute;
-	background-color: turquoise;
 	color:black;
+	z-index: 1;
 }
 
 li:hover li 
@@ -67,20 +76,40 @@ li:hover li
 
 li:hover a
 {
-	/*background: #008B8B;*/
-	border-radius: 3px;
-	height:50px;
-	opacity: 0.5;
 	text-decoration: none;
-	font-weight: bold;
-	color:black;
+	border-width: inherit;
 }
 
-/*
-.active
+/*ruler*/
+hr
 {
-	background-color: red !important;
-}*/
+	height: 0px;
+	border-top: 4px solid black;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+	margin: 36px 0;
+}
+
+.intro
+{
+  	margin: 10px auto;
+	font-size: 15px;
+}
+
+.info
+{
+	
+	/*padding: 4px 4px 4px 4px;*/
+	box-shadow: -webkit-box-shadow: 3px 10px 66px -4px rgba(0,0,0,0.75);
+				-moz-box-shadow: 3px 10px 66px -4px rgba(0,0,0,0.75);
+	box-shadow: 3px 10px 66px -4px rgba(0,0,0,0.75);
+	border-radius: 10px;
+	height: 300px;
+	width: 530px;
+	background-color: white;
+	margin: 0px 14px;
+	
+}
 
 /*Footer*/
 footer
@@ -88,13 +117,13 @@ footer
 	background-color: white;
 	border-radius:4px;
 	height:130px;
-	width:1120px;
+	width:1130px;
 	margin: 20px auto;
 	padding: 17px 30px 13px;
-	background-color:#white;
-	-webkit-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
-	box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.6);
+	background-color:#5F3F15;
+	-webkit-box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 4px 2px -1px rgba(0, 0, 0, 0.6);
     border-bottom-left-radius:10px;
     border-bottom-right-radius:6px;
 }
@@ -105,6 +134,7 @@ footer p
     font-family:verdana,sans-serif;
     font-weight:bold;
 	text-align: center;
+	color:white;
 }
 
 footer img
@@ -115,6 +145,8 @@ footer img
     margin-left: auto;
     margin-right: auto;
 }
+
+
 /*Contact div*/
 .mytabset
 {
@@ -208,7 +240,7 @@ th
 	border: 1px solid #A9A9A9;
     width:250px;
     font-size:15px;
-	color:#778899;
+	color:white;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     border-radius:6px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
@@ -230,6 +262,16 @@ th
 	-webkit-box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;	
 }
 
+#register select
+{
+	background-color: black;
+	font-family: sans-serif;
+	font-size: 16px;
+	height: 40px;
+	border-radius: 5px;
+	color:white;
+}
+
 #register form label 
 {
 	margin-left: 24px;
@@ -246,8 +288,7 @@ th
 {
     width:20px;
     padding:0px;
-    margin:0px;
-    
+    margin:0px;    
 }
 
 #register form input[type=text],
@@ -307,3 +348,270 @@ th
 	background: linear-gradient(45deg, #007A29 0%,#66C285 100%);
 }
 
+/* Climate Change Animation*/
+@keyframes picanimation
+{
+	1%{opacity:1.0;}
+	20%{opacity:0.0;}
+	75%{opacity:0.0;}
+	100%{opacity:1.0;}
+}
+
+@-webkit-keyframes picanimation 
+{
+	1%{-webkit-opacity:1.0;}
+	20%{-webkit-opacity:0.0;}
+	75%{-webkit-opacity:0.0;}
+	100%{-webkit-opacity:1.0;}
+}
+
+.animation1
+{	
+	position:absolute;
+	left:10px;
+	top:20px;
+	
+	-webkit-animation-name:picanimation;
+	animation-name:picanimation;
+	-webkit-animation-duration:5.0s;
+	animation-duration:5.0s;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	-webkit-animation-delay:0.8s;
+	animation-delay:0.8s;
+	-webkit-animation-direction:alternate;
+	animation-direction:alternate;
+    animation-timing-function:ease-in-out;
+}
+
+.animation2 
+{	
+	position:absolute;
+	left:10px;
+	top:20px;
+		
+	-webkit-animation-name:picanimation;
+	animation-name:animation2;
+	-webkit-animation-duration:5.0s;
+	animation-duration:5.0s;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	-webkit-animation-delay:1.6s;
+	animation-delay:1.6s;
+	-webkit-animation-direction:alternate;
+	animation-direction:alternate;
+    animation-timing-function:ease-out;
+}
+
+.animation3 
+{	
+	position:absolute;
+	left:10px;
+	top:20px;
+		
+	-webkit-animation-name:picanimation;
+	animation-name:picanimation;
+	-webkit-animation-duration:5.0s;
+	animation-duration:5.0s;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	-webkit-animation-delay:2.4s;
+	animation-delay:2.4s;
+	-webkit-animation-direction:alternate;
+	animation-direction:alternate;
+}
+
+/* Quiz */
+.quiz 
+{
+	background: white;
+	border-radius: 10px;
+}
+
+/* Media queries*/
+@media only screen and (max-width:600px){
+	.clogo
+	{
+		width: 140%;
+		height: auto;
+		top:39%;
+		left:1%;
+		position: relative;
+	}	
+
+	footer
+	{
+		width: 100%;
+        height: 50%;
+    }
+
+	.intro
+	{
+  		margin: 10px auto;
+		font-size: 15px;
+		width: auto;
+		height: 50%;
+	}
+
+	.info
+	{
+		width: 90%;
+	}
+
+	.animation1,.animation2,.animation3
+	{
+		height: 200px;
+		width: 100%;
+		line-height: 50%; 
+	}
+
+	.iframe
+	{
+		width:40%;
+		height: 50%;
+	}
+
+	#newuser
+	{
+	    display: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width:200 px;
+	    height:200 px;
+	    padding-top:20px;
+	}
+
+	#register
+	{
+		height:1050px;
+		width: 350px;
+	}
+
+	#register form
+	{
+		width:350px;
+		height: 1050px;
+		float:left;
+
+	}
+
+	#register .formtitle
+	{
+		padding: 15px;
+	    text-align: left;
+		width: 350px;
+	    height:50px;
+	}
+
+	#register form input,textarea
+	{
+		padding:10px;
+	    display:inline-block;
+	    width:150px;		
+	}
+
+	#register .radio
+	{
+	    padding:10px;
+	    width:50px;
+	}
+
+	#register input:hover, textarea:hover,
+	#register input:focus, textarea:focus 
+	{
+		border-color:#33AD5C;
+		box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;
+		-moz-box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;
+		-webkit-box-shadow: rgba(115, 233, 47, 0.9) 0px 0px 8px;	
+	}
+
+	#register select
+	{
+		background-color: black;
+		font-family: sans-serif;
+		font-size: 16px;
+		height: 40px;
+		border-radius: 5px;
+		color:white;
+	}
+
+	#register form label 
+	{
+		margin-left: 20px;
+	    margin-right:20px;
+	    width:100px;
+	    display:inline-block;
+	    
+	}
+
+	#register form input[type=radio]
+	{
+	    width:20px;
+	    padding:0px;
+	    margin:0px;    
+	}
+
+	#register form input[type=text],
+	#register form input[type=password],
+	#register form input[type=date],
+	#register form textarea
+	{
+	    background: #000;
+	    font-size: 15px;
+	    font-family: sans-serif;
+	    color:white;
+	}
+
+
+	#register form #comments
+	{
+	    width : 200px;
+	    height: 100px;
+	}
+
+	#register form 
+	.buttons
+	{
+		padding: 15px;
+		height: 70px;
+		width: 350px;
+
+	}
+
+	#register select
+	{
+		height: 40px;
+		width: 150px;
+	}
+
+}
+
+
+
+@media all and (max-width: 1000px) and (min-width: 700px){
+	footer
+	{
+	  	width: 100%;
+	}
+
+
+	.intro
+	{
+  		margin: 10px auto;
+		font-size: 15px;
+		width: auto;
+		height: 100%;
+	}
+
+	.info
+	{
+		width: 95%;
+	}
+}
+
+@media all and (max-width: 1120px) and (min-width: 1000px){
+  footer
+  {
+  	width: 100%;
+  }
+}
