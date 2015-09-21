@@ -10,7 +10,84 @@
 		<link href="images/logo.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="js/respond.js"></script>
+		<style>
+			#image_cont{
+				box-shadow: 10px 10px 50px #46694d;
+			}
+			#image_cont{
+				position: relative;
+				display:inline-block;
+				text-align: center;
+			}
+
+			#btn_con_light{
+				position:absolute;
+				top: 70%;
+				left: 15%;
+			}
+
+			#btn_con_sun{
+				position:absolute;
+				top: 75%;
+				left: 35%
+			}
+
+			#btn_con_water{
+				position:absolute;
+				top: 68%;
+				left: 55%
+			}
+
+			#btn_con_green{
+				position:absolute;
+				top: 55%;
+				left: 75%
+			}
+			#img_icon1{
+				width: 125px;
+				height: 125px;
+				-webkit-filter: drop-shadow(10px 11px 0 #e55f0a)
+				drop-shadow(-10px -11px 0 #f8b34e);
+				filter: drop-shadow(1px 1px 0 #e55f0a)
+				drop-shadow(-1px -1px 0 #f8b34e);
+			}
+			#img_icon1:hover {
+				width: 200px;
+				height: 200px;
+			}
+			#myModal1{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+
+			#myModal2{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+
+			#myModal3{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+			#myModal4{
+				top:25%;
+				right:0%;
+				outline: none;
+			}
+			#main_header{
+				font-family: fantasy;
+				font-size: 100px;
+				color: #32CD32;
+				background: -webkit-linear-gradient(#f87a56, #f8b34e);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -36,16 +113,123 @@
 			    </ul>
 			</nav>
 
-			<div>
+			<div class="container" id="image_cont" style="background-color: rgba(190, 245, 213, 0.85)">
+				<h1 id="main_header">CLIMA INFO: Know your facts</h1>
+				<img class="img-responsive center-block" src="images/water_impact.png">
+				<div class="container">
+					<button type="button" class="btn btn-lg" id="btn_con_light" style="background-color: transparent" data-toggle="modal" data-target="#myModal1">
+						<input id="img_icon1" type="image" src="images/con_light.png" alt="info1">
+					</button>
 
-			</div>
-
-			<footer>
-				<div>
-					<a href="index.html"><img src="images/logo.png" alt="Clima Organisation logo"/></a>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h1 class="modal-title" id="myModalLabel1">THE USE OF ELECTRICITY</h1>
+								</div>
+								<div class="modal-body">
+									<p>
+										<img src="images/How_to_Conserve_Energy_6129616_460.jpg"/>
+									</p>
+									<p>
+										Impacts on Water Quality
+									Debris can also affect the water quality by
+									adding chemicals to the water. Construction
+									waste illegally dumped in a stream can include
+									buckets that once held paints, solvents,
+									and other chemicals that can enter the water.
+									Cigarette butts and some other littered items
+									contain toxic chemicals that leach into
+									the water.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<p>Clima Organisation &copy; 2015 . All Rights Reserved.</p>
-			</footer>
+				<div>
+					<button type="button" class="btn btn-lg" id="btn_con_sun" style="background-color: transparent" data-toggle="modal" data-target="#myModal2">
+						<input id="img_icon1" type="image" src="images/con_sun.png" alt="info1">
+					</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h1 class="modal-title" id="myModalLabel">THE SUN IS HOT!!</h1>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<button type="button" class="btn btn-lg" id="btn_con_water" style="background-color: transparent" data-toggle="modal" data-target="#myModal3">
+						<input id="img_icon1" type="image" src="images/con_water.png" alt="info1">
+					</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h1 class="modal-title" id="myModalLabel">Modal title</h1>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<button type="button" class="btn btn-lg" id="btn_con_green" style="background-color: transparent" data-toggle="modal" data-target="#myModal4">
+						<input id="img_icon1" type="image" src="images/con_tree.png" alt="info1">
+					</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h1 class="modal-title" id="myModalLabel">GO GREEN!!</h1>
+								</div>
+								<div class="modal-body">
+									environmental challenges steadily degrade the
+									health of ecosystems and thus the quality of their services,
+									short-term economic and social decisions further threaten
+									sustainability. Over-exploiting forests for timber or firewood,
+									for example, compromises ecosystem health, including its
+									capacity to regulate the level of the water table.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <footer>
+                <div>
+                    <a href="index.html"><img src="images/logo.png" alt="Clima Organisation logo"/></a>
+                </div>
+                <p>Clima Organisation &copy; 2015 . All Rights Reserved.</p>
+            </footer>
 		</div>
 
 		<script src="js/jquery.min.js"></script>
